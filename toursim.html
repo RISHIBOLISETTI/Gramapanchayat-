@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html style="margin:50px">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+
+<p>
+<h1><b>East Godavari Tourism</b></h1>
+</br>
+The district is not only endowed with rich heritage in literature, art and culture but also stands as an epitome of tourism as well. A journey made to the tourist spots of this district never lets you down. You will return to these places again and again and the joy first derived will still be there.
+</br>
+</br>
+The rich ambiance makes everyone feel a flow of energy pass through them and the charm of the tourist spots mesmerizes us and our hearts cannot help but walk with the beauty of them.
+</br>
+</br>
+The tourist department of the district also considers it a privilege to host the tourists as the department considers them as special people who always turn to nature as the ultimate pleasure. There is nothing wrong with those who miss to visit the district; but they are missing out something important.
+</br>
+</br>
+East Godavari has a wide range of tourism options to offer, some of which are as below:
+</br>
+</br>
+1.Pilgrimage Tourism</br>
+2.Cultural Tourism</br>
+3.Eco Tourism</br>
+4.Engineering Tourism</br>
+5.Forest Tourism</br>
+</p>
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="tor1.jpg" style="width:100%" >
+  <img class="mySlides" src="tor2.jpg" style="width:100%" >
+  <img class="mySlides" src="tor3.jpg" style="width:100%" >
+  <img class="mySlides" src="tor4.jpg" style="width:100%" >
+  <img class="mySlides" src="tor5.jpg" style="width:100%" >
+
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+</body>
+</html>
